@@ -1,0 +1,7 @@
+verificacao,numerador,denominador,cobertura,criterio
+CNES SIH -> API CNES estabelecimentos,637,637,1.0,100%
+MUNIC_MOV SIH -> CSV Região de Saúde,327,327,1.0,100%
+Municípios snapshot CNES -> CSV Região de Saúde,352,352,1.0,100%
+SIH município-mês -> capacidade CNES município-mês (ponderada por AIH),2950400,2950400,1.0,100%
+CNES SIH -> snapshot Hospitais/Leitos (qualquer mês),579,637,0.9089481946624803,informativo; snapshot não é cadastro mestre CNES
+SIH CNES-mês -> snapshot Hospitais/Leitos (ponderada por AIH),2857349,2950400,0.9684615645336225,informativo; capacidade será agregada por município-mês

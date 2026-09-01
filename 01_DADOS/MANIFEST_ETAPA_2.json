@@ -1,0 +1,125 @@
+{
+  "gerado_em_utc": "2026-09-01T03:17:32.760558+00:00",
+  "arquivos": [
+    {
+      "path": "01_DADOS/MANIFEST_ETAPA_2.json",
+      "bytes": 5759,
+      "sha256": "cb14b9c87b61d3e4247df1195db5c4701c71edfbd6503fe4347a9fca0a4db057"
+    },
+    {
+      "path": "01_DADOS/README_FONTES.md",
+      "bytes": 3352,
+      "sha256": "ef5382ee9f81015aae580dc22e95571623da51611626dda73aa757b73aecef56"
+    },
+    {
+      "path": "01_DADOS/docs/dicionario_dados.md",
+      "bytes": 2647,
+      "sha256": "ae95e4d786a8a9227526d7384b5a77df143f603103417145212871e9422a3847"
+    },
+    {
+      "path": "01_DADOS/evidencias/cobertura_integracao.csv",
+      "bytes": 621,
+      "sha256": "8c9dcc6afa9f61a7c923695a40267bc630de0b1dd95a83dffa5d4fe6272995b0"
+    },
+    {
+      "path": "01_DADOS/evidencias/perfil_capacidade_mensal.csv",
+      "bytes": 520,
+      "sha256": "f744a5757e89d34cc68af8ecf14116810c4c60df3c9aeb42d252709e0ffca5fa"
+    },
+    {
+      "path": "01_DADOS/evidencias/perfil_sih_mensal.csv",
+      "bytes": 805,
+      "sha256": "8870766854bd5d310bb2d84061a09c5527b8e0a9a1cee8f0da44a129f5106641"
+    },
+    {
+      "path": "01_DADOS/processed/metadata_pipeline.json",
+      "bytes": 1149,
+      "sha256": "3c399a916f7d383c98253e424431c46f21e97873d4ca142437d12474c10ddaa4"
+    },
+    {
+      "path": "01_DADOS/processed/regiao_resumo_hpi_2025.csv",
+      "bytes": 10443,
+      "sha256": "7bd921b8f81fe15faf2af14b262247f542e8508e6593be67c47f607a948c390d"
+    },
+    {
+      "path": "01_DADOS/quality/relatorio_validacao_dados.json",
+      "bytes": 2481,
+      "sha256": "2f9624cc1ad12e20c0f07bd220799838c4255adbc3efee266b81fba2801f8753"
+    },
+    {
+      "path": "01_DADOS/quality/relatorio_validacao_dados.md",
+      "bytes": 1089,
+      "sha256": "6eae71afb14e9d7296dc865f6579ff42c81bdf3ae678d41231d3e3edf7213a0f"
+    },
+    {
+      "path": "01_DADOS/quality/relatorio_validacao_dashboard_etapa5.json",
+      "bytes": 2485,
+      "sha256": "89fd78176f8b5487c5ca3efe979b322a157b6711af5d4daaf664ae88aef294c8"
+    },
+    {
+      "path": "01_DADOS/quality/relatorio_validacao_dashboard_etapa5.md",
+      "bytes": 1858,
+      "sha256": "2ec47b91abcf8d210e0e10afd1a18c5c8f92ae6af429b63d2d0feab1e8f562e1"
+    },
+    {
+      "path": "01_DADOS/quality/relatorio_validacao_hpi_etapa4.json",
+      "bytes": 3612,
+      "sha256": "46973d75749b5121bf15081696cc596ac37efcc058662a473f5114e22a4cd9c6"
+    },
+    {
+      "path": "01_DADOS/quality/relatorio_validacao_hpi_etapa4.md",
+      "bytes": 2058,
+      "sha256": "f7201ccbbb53ed46bf14d7cb072301bf002cfbbc3b07f435287d86d9614b2204"
+    },
+    {
+      "path": "01_DADOS/quality/relatorio_validacao_pipeline_etapa3.json",
+      "bytes": 3270,
+      "sha256": "9a2df366340ed28ba32d51223c01a00ea7709db9958f9b94749ad87d6e79db47"
+    },
+    {
+      "path": "01_DADOS/quality/relatorio_validacao_pipeline_etapa3.md",
+      "bytes": 1905,
+      "sha256": "27921113dfbd39ee7a0c3775fcd30954622c6b96b0d0e77ceaeb83c4fe55be72"
+    },
+    {
+      "path": "01_DADOS/raw/auxiliar/metadata_regioes_saude_sp.json",
+      "bytes": 746,
+      "sha256": "fee64f6b4a2221aff6406aa3aba614b6063ba3cfefdd1ffa672af228ed522d7c"
+    },
+    {
+      "path": "01_DADOS/raw/auxiliar/regioes_saude_sp.csv",
+      "bytes": 68951,
+      "sha256": "2b9f766208594735c3399608a3161dee9b2c3d555d5decfd02a04d5ea2244fa5"
+    },
+    {
+      "path": "01_DADOS/raw/cnes/cnes_estabelecimentos_sih_sp_2025_api.json",
+      "bytes": 1077574,
+      "sha256": "39aa79a376fe17e42af184070cb2840071124cf476b31fc19f668fe852f2d297"
+    },
+    {
+      "path": "01_DADOS/raw/cnes/hospitais_leitos_sp_2025_snapshot.json",
+      "bytes": 12001046,
+      "sha256": "bc10a62a4d2cf6436601e67c5924811897826bd7fe7183d5d89da0cffcdcb9d2"
+    },
+    {
+      "path": "01_DADOS/raw/cnes/metadata_cnes_estabelecimentos_sih_sp_2025_api.json",
+      "bytes": 1046,
+      "sha256": "80e7c2ba80a1a174f9b5605d528702ed6d624cd64206be64b3238510dafd80cb"
+    },
+    {
+      "path": "01_DADOS/raw/cnes/metadata_hospitais_leitos_sp_2025_snapshot.json",
+      "bytes": 588,
+      "sha256": "8b6830edeca7a47d48a35f0dcd291b978efba2b3c9828ecc97a55e214c02d507"
+    },
+    {
+      "path": "01_DADOS/raw/sih/metadata_sih_sp_2025.json",
+      "bytes": 7649,
+      "sha256": "9c86ca886e5485cd9e382a39e684b170bd637e3f20631410bd838ecbe9abf017"
+    },
+    {
+      "path": "01_DADOS/staging/sih_sp_2025.sqlite",
+      "bytes": 395010048,
+      "sha256": "5a9fcd39de38f2790c8eaadfcaa43f12564288474bbab2dc609f77622521c2a4"
+    }
+  ]
+}

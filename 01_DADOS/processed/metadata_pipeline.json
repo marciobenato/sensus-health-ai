@@ -1,0 +1,29 @@
+{
+  "status": "CONCLUIDO",
+  "etapa": 3,
+  "ano": 2025,
+  "granularidades": [
+    "municipio-mes",
+    "regiao-de-saude-mes"
+  ],
+  "hpi": "NÃO CALCULADO NESTA ETAPA",
+  "validacao": "01_DADOS/quality/relatorio_validacao_pipeline_etapa3.json",
+  "outputs": {
+    "demanda_municipio_mes": {
+      "path": "01_DADOS/processed/demanda_municipio_mes_2025.csv",
+      "sha256": "ed3da56b1d808dc79c414e1636891f25ec9952100edd5699e53cb4824459bf78"
+    },
+    "capacidade_municipio_mes": {
+      "path": "01_DADOS/processed/capacidade_municipio_mes_2025.csv",
+      "sha256": "5d8f3bb1ba500cd2e993e26fdc0e21da7a9d21c9a0946842943f05f8455526d4"
+    },
+    "municipio_mes": {
+      "path": "01_DADOS/processed/municipio_mes_2025.csv",
+      "sha256": "7511521b9f3a776068871b69ff9033278e4aa48f63cb17996c7308b6c080739f"
+    },
+    "regiao_mes": {
+      "path": "01_DADOS/processed/regiao_mes_2025.csv",
+      "sha256": "386ac02d70afe0a1075fac37ca8bddd752186e07c75f5cfc1a652981f26c9175"
+    }
+  }
+}

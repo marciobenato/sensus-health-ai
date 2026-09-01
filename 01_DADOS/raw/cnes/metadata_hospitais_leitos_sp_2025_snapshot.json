@@ -1,0 +1,11 @@
+{
+  "fonte": "Portal de Dados Abertos do SUS - Hospitais e Leitos 2025",
+  "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/Leitos_SUS/json/Leitos_json_2025.zip",
+  "formato": "JSON anual compactado em ZIP",
+  "zip_sha256": "bf80d2350b4e3f05af74bfbe4ca7c966083d5032e49e86cf6d0f52b9186d6cfd",
+  "registros_total_arquivo": 86147,
+  "registros_sp": 12265,
+  "arquivo": "sensus_collect_output/raw/cnes/hospitais_leitos_sp_2025_snapshot.json",
+  "sha256": "bc10a62a4d2cf6436601e67c5924811897826bd7fe7183d5d89da0cffcdcb9d2",
+  "coletado_em_utc": "2026-09-01T01:58:26.471538+00:00"
+}

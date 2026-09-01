@@ -1,0 +1,91 @@
+{
+  "status": "APROVADO",
+  "artefato": "04_DASHBOARD/deploy/index.html",
+  "bytes": 291453,
+  "sha256": "eb17d548b66ba88773c082a14721b76107cccf29fbc8ff31d38446a3b316d53d",
+  "checks": [
+    {
+      "check": "HTML gerado e não vazio",
+      "ok": true,
+      "detalhe": 291453
+    },
+    {
+      "check": "12 competências disponíveis",
+      "ok": true,
+      "detalhe": [
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512"
+      ]
+    },
+    {
+      "check": "Competência padrão 202512",
+      "ok": true,
+      "detalhe": "202512"
+    },
+    {
+      "check": "Ranking Plotly presente",
+      "ok": true,
+      "detalhe": "div#ranking"
+    },
+    {
+      "check": "Scatter Plotly presente",
+      "ok": true,
+      "detalhe": "div#scatter"
+    },
+    {
+      "check": "Tendência Plotly presente",
+      "ok": true,
+      "detalhe": "div#trend"
+    },
+    {
+      "check": "Atualização interativa por competência",
+      "ok": true,
+      "detalhe": "select#month + Plotly.react"
+    },
+    {
+      "check": "Dataset incorporado no HTML",
+      "ok": true,
+      "detalhe": "JSON analítico embutido"
+    },
+    {
+      "check": "Sem dependência externa de stylesheet",
+      "ok": true,
+      "detalhe": "CSS incorporado"
+    },
+    {
+      "check": "Dataset analítico 744 região-mês",
+      "ok": true,
+      "detalhe": 744
+    },
+    {
+      "check": "62 regiões por competência",
+      "ok": true,
+      "detalhe": {
+        "202501": 62,
+        "202502": 62,
+        "202503": 62,
+        "202504": 62,
+        "202505": 62,
+        "202506": 62,
+        "202507": 62,
+        "202508": 62,
+        "202509": 62,
+        "202510": 62,
+        "202511": 62,
+        "202512": 62
+      }
+    }
+  ],
+  "limitacao_verificacao": "O sandbox bloqueia teste headless via file:// e localhost; a validação é estrutural e de cobertura dos dados. Isso não equivale a screenshot de runtime do navegador.",
+  "nota_metodologica": "HPI-R1 é índice acadêmico relativo; proxy_pressao_leitos_sus_pct não é taxa oficial de ocupação."
+}

@@ -1,0 +1,126 @@
+{
+  "status": "APROVADO",
+  "uf": "SP",
+  "ano": 2025,
+  "executado_em_utc": "2026-09-01T03:27:13.794077+00:00",
+  "fontes": {
+    "sih": {
+      "registros": 2950400,
+      "competencias": [
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512"
+      ],
+      "cnes_distintos": 637
+    },
+    "cnes_api": {
+      "registros": 637,
+      "cobertura_sih": 1.0
+    },
+    "cnes_snapshot": {
+      "registros": 12265,
+      "competencias": [
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512"
+      ]
+    },
+    "regioes": {
+      "municipios": 645,
+      "regioes": 62,
+      "macrorregioes": 19
+    }
+  },
+  "checks": [
+    {
+      "check": "SIH: 12 competências",
+      "ok": true,
+      "detalhe": [
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512"
+      ]
+    },
+    {
+      "check": "SIH: registros > 0",
+      "ok": true,
+      "detalhe": 2950400
+    },
+    {
+      "check": "CNES API: cobertura dos CNES SIH >=95%",
+      "ok": true,
+      "detalhe": "637/637"
+    },
+    {
+      "check": "CNES snapshot: 12 competências de 2025",
+      "ok": true,
+      "detalhe": [
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512"
+      ]
+    },
+    {
+      "check": "CNES snapshot: registros SP >0",
+      "ok": true,
+      "detalhe": 12265
+    },
+    {
+      "check": "Regiões: municípios >=600",
+      "ok": true,
+      "detalhe": 645
+    },
+    {
+      "check": "Regiões: 62 regiões",
+      "ok": true,
+      "detalhe": 62
+    },
+    {
+      "check": "Cobertura SIH município -> região >=95%",
+      "ok": true,
+      "detalhe": "327/327"
+    },
+    {
+      "check": "Cobertura CNES capacidade município -> região >=95%",
+      "ok": true,
+      "detalhe": "352/352"
+    }
+  ],
+  "nota_endpoint_agregado": "/assistencia-a-saude/hospitais-e-leitos retornou HTTP 500 e não é tratado como fonte funcional do as-built."
+}

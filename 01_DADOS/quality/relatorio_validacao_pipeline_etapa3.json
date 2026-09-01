@@ -1,0 +1,131 @@
+{
+  "status": "APROVADO",
+  "executado_em_utc": "2026-09-01T03:27:21.261991+00:00",
+  "checks": [
+    {
+      "check": "Demanda: 12 competências",
+      "ok": true,
+      "detalhe": [
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512"
+      ]
+    },
+    {
+      "check": "Capacidade: 12 competências",
+      "ok": true,
+      "detalhe": [
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512"
+      ]
+    },
+    {
+      "check": "Demanda: chave município+competência única",
+      "ok": true,
+      "detalhe": 0
+    },
+    {
+      "check": "Capacidade: chave município+competência única",
+      "ok": true,
+      "detalhe": 0
+    },
+    {
+      "check": "Município-mês: sem região ausente",
+      "ok": true,
+      "detalhe": 0
+    },
+    {
+      "check": "Município-mês: sem capacidade ausente",
+      "ok": true,
+      "detalhe": 0
+    },
+    {
+      "check": "Município-mês: uma linha por chave",
+      "ok": true,
+      "detalhe": 0
+    },
+    {
+      "check": "Região-mês: 62 regiões x 12 competências",
+      "ok": true,
+      "detalhe": 744
+    },
+    {
+      "check": "Região-mês: chave única",
+      "ok": true,
+      "detalhe": 0
+    },
+    {
+      "check": "Conservação: registros SIH",
+      "ok": true,
+      "detalhe": {
+        "esperado": 2950400,
+        "obtido": 2950400
+      }
+    },
+    {
+      "check": "Região-mês: métricas sem negativos",
+      "ok": true,
+      "detalhe": {
+        "registros_aih": 0,
+        "aih_distintas": 0,
+        "dias_permanencia_total": 0,
+        "valor_total_aih": 0,
+        "obitos_registrados": 0,
+        "leitos_existentes": 0,
+        "leitos_sus": 0,
+        "uti_total_exist": 0,
+        "uti_total_sus": 0
+      }
+    },
+    {
+      "check": "Conservação: capacidade mensal CNES",
+      "ok": true,
+      "detalhe": "somas município→região idênticas"
+    }
+  ],
+  "resumo": {
+    "demanda_municipio_mes_linhas": 3883,
+    "capacidade_municipio_mes_linhas": 4212,
+    "municipio_mes_linhas": 3883,
+    "regiao_mes_linhas": 744,
+    "regioes": 62,
+    "competencias": 12
+  },
+  "arquivos": {
+    "demanda_municipio_mes": {
+      "path": "01_DADOS/processed/demanda_municipio_mes_2025.csv",
+      "sha256": "ed3da56b1d808dc79c414e1636891f25ec9952100edd5699e53cb4824459bf78"
+    },
+    "capacidade_municipio_mes": {
+      "path": "01_DADOS/processed/capacidade_municipio_mes_2025.csv",
+      "sha256": "5d8f3bb1ba500cd2e993e26fdc0e21da7a9d21c9a0946842943f05f8455526d4"
+    },
+    "municipio_mes": {
+      "path": "01_DADOS/processed/municipio_mes_2025.csv",
+      "sha256": "7511521b9f3a776068871b69ff9033278e4aa48f63cb17996c7308b6c080739f"
+    },
+    "regiao_mes": {
+      "path": "01_DADOS/processed/regiao_mes_2025.csv",
+      "sha256": "386ac02d70afe0a1075fac37ca8bddd752186e07c75f5cfc1a652981f26c9175"
+    }
+  }
+}

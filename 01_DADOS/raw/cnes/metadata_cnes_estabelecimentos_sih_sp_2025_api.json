@@ -1,0 +1,18 @@
+{
+  "fonte": "DEMAS/MS API de Dados Abertos - CNES Estabelecimentos",
+  "endpoint": "https://apidadosabertos.saude.gov.br/cnes/estabelecimentos/{codigo_cnes}",
+  "finalidade": "Enriquecimento/identificação dos estabelecimentos CNES presentes no SIH SP/2025; capacidade de leitos será obtida do snapshot oficial 2025.",
+  "formato": "JSON via API",
+  "cnes_solicitados": 637,
+  "registros_ok": 637,
+  "not_found": 0,
+  "payload_invalido": 0,
+  "erros": 0,
+  "cobertura": 1.0,
+  "workers": 6,
+  "arquivo": "/home/runner/work/projetos/projetos/fiap/sensus-health-ai/sprint-2/sensus_collect_output/raw/cnes/cnes_estabelecimentos_sih_sp_2025_api.json",
+  "sha256": "39aa79a376fe17e42af184070cb2840071124cf476b31fc19f668fe852f2d297",
+  "detalhes": "/home/runner/work/projetos/projetos/fiap/sensus-health-ai/sprint-2/sensus_collect_output/raw/cnes/cnes_estabelecimentos_sih_sp_2025_api_resultados.json",
+  "detalhes_sha256": "bc067b22df53dca1d218cdbf1fbb65583a916c5002330d5f2762bd183389a763",
+  "coletado_em_utc": "2026-09-01T01:58:35.519655+00:00"
+}

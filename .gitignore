@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+
+# Dados brutos/intermediários volumosos
+01_DADOS/raw/sih/*.dbc
+01_DADOS/raw/**/*.zip
+01_DADOS/raw/cnes/*_api_resultados.json
+01_DADOS/raw/cnes/cnes_estabelecimentos_sih_sp_2025_api.json
+01_DADOS/raw/cnes/hospitais_leitos_sp_2025_snapshot.json
+01_DADOS/staging/*.sqlite
+01_DADOS/staging/*.db
+
+# Artefatos locais temporários
+sensus_collect_output/
+*.log

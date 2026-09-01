@@ -1,0 +1,24 @@
+{
+  "fonte": "DEMAS/MS API Dados Abertos - Região/Macrorregião de Saúde",
+  "endpoint": "https://apidadosabertos.saude.gov.br/macrorregiao-e-regiao-de-saude/municipio",
+  "filtro_uf": "SP",
+  "formato": "CSV",
+  "registros": 645,
+  "colunas": [
+    "codigo_regiao_pais",
+    "regiao_pais",
+    "codigo_uf",
+    "uf",
+    "codigo_macrorregiao_saude",
+    "macrorregiao_saude",
+    "codigo_regiao_saude",
+    "regiao_saude",
+    "codigo_municipio",
+    "municipio",
+    "populacao_estimada_ibge_2022"
+  ],
+  "arquivo": "sensus_collect_output/raw/auxiliar/regioes_saude_sp.csv",
+  "sha256": "2b9f766208594735c3399608a3161dee9b2c3d555d5decfd02a04d5ea2244fa5",
+  "content_type": "text/csv",
+  "coletado_em_utc": "2026-09-01T01:58:53.070804+00:00"
+}

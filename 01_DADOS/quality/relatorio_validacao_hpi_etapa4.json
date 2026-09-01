@@ -1,0 +1,155 @@
+{
+  "status": "APROVADO",
+  "executado_em_utc": "2026-09-01T03:27:22.196680+00:00",
+  "checks": [
+    {
+      "check": "744 observações região-mês",
+      "ok": true,
+      "detalhe": 744
+    },
+    {
+      "check": "62 regiões por competência",
+      "ok": true,
+      "detalhe": {
+        "202501": 62,
+        "202502": 62,
+        "202503": 62,
+        "202504": 62,
+        "202505": 62,
+        "202506": 62,
+        "202507": 62,
+        "202508": 62,
+        "202509": 62,
+        "202510": 62,
+        "202511": 62,
+        "202512": 62
+      }
+    },
+    {
+      "check": "12 competências",
+      "ok": true,
+      "detalhe": [
+        "202501",
+        "202502",
+        "202503",
+        "202504",
+        "202505",
+        "202506",
+        "202507",
+        "202508",
+        "202509",
+        "202510",
+        "202511",
+        "202512"
+      ]
+    },
+    {
+      "check": "HPI entre 0 e 100",
+      "ok": true,
+      "detalhe": {
+        "min": 1.61,
+        "max": 100.0
+      }
+    },
+    {
+      "check": "Percentil HPI entre 0 e 100",
+      "ok": true,
+      "detalhe": {
+        "min": 1.61,
+        "max": 100.0
+      }
+    },
+    {
+      "check": "Indicadores centrais sem nulos",
+      "ok": true,
+      "detalhe": {
+        "proxy_pressao_leitos_sus_pct": 0,
+        "aih_por_leito_sus": 0,
+        "uti_sus_por_100_leitos_sus": 0,
+        "valor_medio_por_aih_registrada": 0,
+        "obitos_por_100_registros_aih": 0,
+        "score_pressao_relativo": 0,
+        "score_demanda_relativo": 0,
+        "hpi_score": 0,
+        "hpi_percentil_mes": 0
+      }
+    },
+    {
+      "check": "Indicadores de pressão/capacidade sem negativos",
+      "ok": true,
+      "detalhe": {
+        "proxy_pressao_leitos_sus_pct": 0,
+        "aih_por_leito_sus": 0,
+        "uti_sus_por_100_leitos_sus": 0
+      }
+    },
+    {
+      "check": "Criticidade relativa válida",
+      "ok": true,
+      "detalhe": [
+        "ALTA",
+        "BAIXA",
+        "CRITICA",
+        "MODERADA"
+      ]
+    }
+  ],
+  "estatisticas": {
+    "proxy_pressao_leitos_sus_pct": {
+      "count": 744.0,
+      "mean": 61.5695,
+      "std": 14.4245,
+      "min": 20.2107,
+      "25%": 52.4005,
+      "50%": 63.2297,
+      "75%": 73.0248,
+      "max": 96.4786
+    },
+    "aih_por_leito_sus": {
+      "count": 744.0,
+      "mean": 4.0684,
+      "std": 0.9774,
+      "min": 1.8019,
+      "25%": 3.3032,
+      "50%": 4.0219,
+      "75%": 4.8003,
+      "max": 6.6366
+    },
+    "hpi_score": {
+      "count": 744.0,
+      "mean": 50.8066,
+      "std": 22.9098,
+      "min": 1.61,
+      "25%": 36.29,
+      "50%": 51.61,
+      "75%": 68.55,
+      "max": 100.0
+    },
+    "classes": {
+      "CRITICA": 189,
+      "MODERADA": 189,
+      "ALTA": 186,
+      "BAIXA": 180
+    }
+  },
+  "metodologia": {
+    "componente_1": "percentil mensal do proxy DIAS_PERM / (LEITOS_SUS * dias_do_mes)",
+    "componente_2": "percentil mensal de AIH distintas / LEITOS_SUS",
+    "pesos": {
+      "pressao_permanencia": 0.5,
+      "demanda_por_leito": 0.5
+    },
+    "classificacao": "quartis relativos do percentil mensal do HPI; não são faixas clínicas",
+    "versao": "HPI-R1"
+  },
+  "arquivos": {
+    "regiao_mes_hpi_2025": {
+      "path": "01_DADOS/processed/regiao_mes_hpi_2025.csv",
+      "sha256": "a34d7eb90e3caf5cd5c9519cce0d3f1041f7db8a142ee946b0ef2e6b20263648"
+    },
+    "regiao_resumo_hpi_2025": {
+      "path": "01_DADOS/processed/regiao_resumo_hpi_2025.csv",
+      "sha256": "7bd921b8f81fe15faf2af14b262247f542e8508e6593be67c47f607a948c390d"
+    }
+  }
+}

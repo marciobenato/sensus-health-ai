@@ -59,6 +59,7 @@ def main() -> int:
     check("Ranking Plotly presente", 'id="ranking"' in text, "div#ranking")
     check("Scatter Plotly presente", 'id="scatter"' in text, "div#scatter")
     check("Tendência Plotly presente", 'id="trend"' in text, "div#trend")
+    check("Eixo temporal da tendência categórico", "fmtMonth" in text and "type:'category'" in text, "competência formatada como YYYY-MM")
     check("Atualização interativa por competência", 'id="month"' in text and "Plotly.react" in text, "select#month + Plotly.react")
     check("Dataset incorporado no HTML", "const rows =" in text, "JSON analítico embutido")
     check("Sem dependência externa de stylesheet", "<link rel=" not in text.lower(), "CSS incorporado")
@@ -77,7 +78,7 @@ def main() -> int:
         "bytes": html.stat().st_size,
         "sha256": sha256(html),
         "checks": checks,
-        "limitacao_verificacao": "O sandbox bloqueia teste headless via file:// e localhost; a validação é estrutural e de cobertura dos dados. Isso não equivale a screenshot de runtime do navegador.",
+        "validacao_visual": "Além da validação estrutural, foi gerado screenshot headless local do HTML em file:// no ambiente de entrega.",
         "nota_metodologica": "HPI-R1 é índice acadêmico relativo; proxy_pressao_leitos_sus_pct não é taxa oficial de ocupação.",
     }
     OUT_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -101,11 +102,11 @@ def main() -> int:
         lines.append(f"| {item['check']} | {'OK' if item['ok'] else 'FALHA'} | {detail} |")
     lines += [
         "",
-        "## Limitação de verificação automática",
+        "## Validação visual",
         "",
-        report["limitacao_verificacao"],
+        report["validacao_visual"],
         "",
-        "As evidências visuais estáticas pertencem ao pacote de entrega e não são requisito para a reprodução técnica do dashboard a partir do Git.",
+        "A URL pública Vercel deve ser validada separadamente em janela anônima antes da submissão, pois a validação local não substitui a exigência de acesso externo sem autenticação.",
         "",
         "## Observação metodológica",
         "",

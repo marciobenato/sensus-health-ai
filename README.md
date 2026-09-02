@@ -6,7 +6,14 @@ MVP acadêmico para análise comparativa de pressão hospitalar nas **62 Regiõe
 
 ## Resultado implementado
 
-O fluxo as-built utiliza fontes públicas do Ministério da Saúde/DATASUS, consolida a demanda hospitalar em base relacional, relaciona capacidade CNES por competência, calcula o **Hospital Pressure Index — HPI-R1** e gera um dashboard HTML navegável. A publicação em URL pública é tratada separadamente e só será declarada concluída após teste externo da URL.
+O fluxo as-built utiliza fontes públicas do Ministério da Saúde/DATASUS, consolida a demanda hospitalar em base relacional, relaciona capacidade CNES por competência, calcula o **Hospital Pressure Index — HPI-R1** e gera um dashboard HTML navegável.
+
+## Links de entrega
+
+- Dashboard informado: https://sensus-health-ai-ib6aujfo9-marciobenato-5064.vercel.app
+- Status do dashboard: requer regularização de acesso público; teste anônimo em 2026-09-02 redirecionou para login da Vercel
+- GitHub público previsto: https://github.com/marciobenato/sensus-health-ai
+- Vídeo pitch YouTube: a regularizar após publicação como vídeo não listado
 
 Resultados técnicos validados:
 
@@ -93,6 +100,6 @@ A base SQLite (~395 MB), DBCs e JSONs brutos volumosos não são versionados. O 
 
 Consulte `06_ARQUITETURA/ARQUITETURA_AS_BUILT_SPRINT2.md` e `05_EVIDENCIAS/CATALOGO_EVIDENCIAS.md` para rastreabilidade.
 
-## Reprodutibilidade no GitHub
+## Reprodutibilidade
 
-O workflow `.github/workflows/sensus-sprint2-reprodutibilidade.yml` é acionado **somente manualmente**. O modo `collect` reproduz as fontes e validação da Etapa 2; `full-build` executa coleta → pipeline → HPI → dashboard e publica os outputs completos como artefatos da execução. Não há gatilho automático por `push`.
+A reprodução técnica pode ser executada localmente pelos comandos desta página. Os dados pesados e outputs completos permanecem fora do Git e devem ser regenerados ou consultados nos artefatos de entrega, evitando inflar o histórico do repositório público.

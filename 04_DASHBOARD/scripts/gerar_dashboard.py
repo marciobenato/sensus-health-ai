@@ -120,6 +120,7 @@ for (const m of months) {{ const o=document.createElement('option'); o.value=m; 
 select.value='202512';
 const fmt=n => Number(n||0).toLocaleString('pt-BR');
 const f2=n => Number(n||0).toLocaleString('pt-BR',{{minimumFractionDigits:2,maximumFractionDigits:2}});
+const fmtMonth=m => String(m).slice(0,4)+'-'+String(m).slice(4);
 function render(month) {{
   const d=rows.filter(r=>String(r.competencia)===month).sort((a,b)=>Number(a.rank_hpi_mes)-Number(b.rank_hpi_mes));
   document.getElementById('kpi-aih').textContent=fmt(d.reduce((s,r)=>s+Number(r.aih_distintas||0),0));
@@ -131,8 +132,8 @@ function render(month) {{
   Plotly.react('scatter',[{{type:'scatter',mode:'markers',x:d.map(r=>r.aih_por_leito_sus),y:d.map(r=>r.proxy_pressao_leitos_sus_pct),text:d.map(r=>r.regiao_saude),marker:{{size:d.map(r=>8+Number(r.hpi_score||0)/8)}},hovertemplate:'%{{text}}<br>AIH/leito=%{{x:.2f}}<br>Proxy=%{{y:.2f}}%<extra></extra>'}}],{{title:'Demanda × proxy de pressão',xaxis:{{title:'AIH distintas por leito SUS'}},yaxis:{{title:'Proxy de pressão (%)'}},margin:{{l:65,r:20,t:55,b:55}}}},{{responsive:true,displaylogo:false}});
   const avg={{}}; for(const r of rows){{const k=r.regiao_saude;(avg[k]??=[]).push(Number(r.hpi_score||0));}}
   const leaders=Object.entries(avg).map(([k,v])=>[k,v.reduce((a,b)=>a+b,0)/v.length]).sort((a,b)=>b[1]-a[1]).slice(0,5).map(x=>x[0]);
-  const traces=leaders.map(name=>{{const s=rows.filter(r=>r.regiao_saude===name).sort((a,b)=>String(a.competencia).localeCompare(String(b.competencia)));return {{type:'scatter',mode:'lines+markers',name,x:s.map(r=>String(r.competencia)),y:s.map(r=>r.hpi_score)}}}});
-  Plotly.react('trend',traces,{{title:'Tendência 2025 — cinco maiores HPI médios',yaxis:{{title:'HPI-R1',range:[0,100]}},xaxis:{{title:'Competência'}},margin:{{l:60,r:20,t:55,b:55}}}},{{responsive:true,displaylogo:false}});
+  const traces=leaders.map(name=>{{const s=rows.filter(r=>r.regiao_saude===name).sort((a,b)=>String(a.competencia).localeCompare(String(b.competencia)));return {{type:'scatter',mode:'lines+markers',name,x:s.map(r=>fmtMonth(r.competencia)),y:s.map(r=>r.hpi_score)}}}});
+  Plotly.react('trend',traces,{{title:'Tendência 2025 — cinco maiores HPI médios',yaxis:{{title:'HPI-R1',range:[0,100]}},xaxis:{{title:'Competência',type:'category'}},margin:{{l:60,r:20,t:55,b:55}}}},{{responsive:true,displaylogo:false}});
   const tbody=document.getElementById('table-body'); tbody.innerHTML='';
   for(const r of d){{const tr=document.createElement('tr');tr.innerHTML=`<td>${{r.regiao_saude}}</td><td>${{f2(r.hpi_score)}}</td><td>${{r.criticidade_relativa}}</td><td>${{fmt(r.aih_distintas)}}</td><td>${{fmt(r.leitos_sus)}}</td><td>${{f2(r.proxy_pressao_leitos_sus_pct)}}</td><td>${{f2(r.aih_por_leito_sus)}}</td>`;tbody.appendChild(tr);}}
 }}

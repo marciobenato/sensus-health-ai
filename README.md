@@ -12,7 +12,7 @@ O fluxo as-built utiliza fontes públicas do Ministério da Saúde/DATASUS, cons
 
 - Dashboard informado: https://sensus-health-ai-ib6aujfo9-marciobenato-5064.vercel.app
 - Status do dashboard: requer regularização de acesso público; teste anônimo em 2026-09-02 redirecionou para login da Vercel
-- GitHub público previsto: https://github.com/marciobenato/sensus-health-ai
+- GitHub público: https://github.com/marciobenato/sensus-health-ai
 - Vídeo pitch YouTube: a regularizar após publicação como vídeo não listado
 
 Resultados técnicos validados:

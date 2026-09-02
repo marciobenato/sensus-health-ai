@@ -12,7 +12,7 @@ DataMove | FIAP 1TSCOA | Sprint 2
 | 4. Implementar indicadores + HPI | ✅ CONCLUÍDA | HPI-R1 calculado para 744 observações + relatório APROVADO |
 | 5. Produzir visualização/dashboard funcional | ✅ CONCLUÍDA / 🟡 DEPLOY PÚBLICO A REGULARIZAR | HTML navegável gerado em `04_DASHBOARD/deploy/index.html`, validação `APROVADO` e screenshot headless local gerado; URL Vercel informada redirecionou para login no teste anônimo de 2026-09-02 |
 | 6. Gerar evidências | ✅ CONCLUÍDA | Catálogo + evidências visuais/técnicas sem simulação de runtime |
-| 7. Consolidar GitHub + README | 🟡 A REGULARIZAR | Branch pública/export limpo preparado; falta criar/publicar `marciobenato/sensus-health-ai` como repositório público |
+| 7. Consolidar GitHub + README | ✅ CONCLUÍDA | Repositório público `marciobenato/sensus-health-ai` criado e branch pública publicada em `main` |
 | 8. Refazer arquitetura as-built | ✅ CONCLUÍDA | `06_ARQUITETURA/ARQUITETURA_AS_BUILT_SPRINT2.md` separa implementação real de evolução futura |
 | 9. Gestão do projeto | ✅ CONCLUÍDA | Execução real e pendências finais refletidas neste controle; referências antigas a Planner não são requisito bloqueante do repositório público |
 | 10. Construir PPT/PDF Sprint 2 | ✅ CONCLUÍDA | Artefatos `EC_Sprint_2_1TSCO_EvidenciasConstrucao_SensusHealthAI_DataMove.pptx` e `.pdf` localizados na pasta de entrega |
@@ -28,4 +28,4 @@ Nenhuma tecnologia, fonte, indicador, resultado ou evidência deve ser apresenta
 
 ## Criticidade atual
 
-A prioridade deixou de ser exploração técnica. Com arquitetura as-built, PPT/PDF, vídeo MP4, código-fonte, planilha e ZIP fechados, o caminho crítico restante é **regularização externa**: criar/publicar o GitHub público exclusivo → publicar o vídeo no YouTube como não listado → regularizar o dashboard para acesso sem login → inserir/validar os links finais nos materiais oficiais. Mudanças analíticas no HPI-R1 só devem ocorrer se surgir defeito comprovado; alterações cosméticas ou ampliação de escopo estão congeladas.
+A prioridade deixou de ser exploração técnica. Com arquitetura as-built, PPT/PDF, vídeo MP4, código-fonte, GitHub público, planilha e ZIP fechados, o caminho crítico restante é **regularização externa**: publicar o vídeo no YouTube como não listado → regularizar o dashboard para acesso sem login → inserir/validar os links finais nos materiais oficiais. Mudanças analíticas no HPI-R1 só devem ocorrer se surgir defeito comprovado; alterações cosméticas ou ampliação de escopo estão congeladas.
